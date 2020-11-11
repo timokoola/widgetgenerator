@@ -30,7 +30,7 @@ document.getElementById("generator").addEventListener("click", (e) => {
 
   let template = `
     // Base parts are from the Scriptable example "random Scriptable API"
-    let widget = await createWidget(items);
+    let widget = await createWidget();
     if (config.runsInWidget) {
       // The script runs inside a widget, so we pass our instance of ListWidget to be shown inside the widget on the Home Screen.
       Script.setWidget(widget);
@@ -43,7 +43,7 @@ document.getElementById("generator").addEventListener("click", (e) => {
     Script.complete();
 
     // modeled after the example
-async function createWidget(stops) {
+async function createWidget() {
   // API seems to return a bad url for stop time tables
 
   let widget = new ListWidget();
@@ -51,7 +51,8 @@ async function createWidget(stops) {
   let gradient = new LinearGradient();
   gradient.locations = [0, 1];
     gradient.colors = [new Color("${topColor}"), new Color("${bottomColor}")]
-  widget.backgroundGradient = gradient`;
+  widget.backgroundGradient = gradient
+}`;
 
   navigator.clipboard.writeText(template);
 });
