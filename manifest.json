@@ -1,0 +1,11 @@
+{
+  "name": "LinearGradientGenerator",
+  "short_name": "LGG",
+  "theme_color": "#224488",
+  "background_color": "#020211",
+  "display": "browser",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "permissions": ["clipboardWrite"]
+}

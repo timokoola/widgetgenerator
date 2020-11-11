@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinearGradient Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body class="box">
+    <main class="stack">
+      <section>
+        <h3>LinearGradient for Scriptable Widget</h3>
+      </section>
+      <section>
+        <form action="#" class="stack">
+          <div>
+            <label for="color1" class="thirty">Top colour</label>
+            <input type="text" name="color1" id="color1" value="#eeffcc" autocapitalize="off" autocomplete="off" />
+          </div>
+
+          <div>
+            <label for="color2" class="thirty">Bottom colour</label>
+            <input type="text" name="color2" id="color2" value="#020202" autocapitalize="off" autocomplete="off" />
+          </div>
+
+          <div>
+            <input type="checkbox" name="structure" id="structure" checked/>
+            <label for="structure">Add base Widget code</label>
+          </div>
+
+          <button class="button" id="generator">Generate & Copy to Clipboard</button>
+        </form>
+      </section>
+      <section class="result"></section>
+      <footer class="center">Copyright &copy; 2020 Timo Koola</footer>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
